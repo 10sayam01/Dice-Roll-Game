@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continer{
+    height: 50vh;
+    width: 350px;
+    background-color: #fdfcfb;
+    border-radius: 3rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.heading{
+    margin-top: 20px;
+}
+.dice {
+  width: 100px;
+  height: 100px;
+  font-size: 120px;       /* Control how big the dice face is */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+
+}
+.dice_animation{
+    animation: anmi 0.2s ease-in-out forwards;
+}
+@keyframes anmi{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(720deg) rotateY(720deg);
+    }
+}
+button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: #fdfcfb;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(33, 6, 141);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+button:active {
+  transform: scale(0.95); /* Button shrinks slightly */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* Reverse color flow */
+}
+.rollBtn{
+        margin-bottom: 20px;
+}
+.finalRes{
+    position: fixed;
+    top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(0, 255, 26);
+}
+
+.neon-text {
+  font-size: 60px;
+  color: #ffff33; /* Bright neon yellow */
+  text-shadow:
+    0 0 5px #ffff33,
+    0 0 10px #ffff33,
+    0 0 20px #ffff33,
+    0 0 40px #ffff33,
+    0 0 80px #ffff33;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
